@@ -1,8 +1,8 @@
-function TableRow(){
+function TableRow(props){
     const names = ['Select', 'Mark', 'Nick']
     return(
         <tr>
-            <td>test</td>
+            <td>{props.heading}</td>
             <td>
                 <select name="" id="">
                     {names.map((e, i) => (
