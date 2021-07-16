@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 function TableBody(){
     
     const [count, setCount] = useState(0);
-
+    const rows = [];
     return (
         <>
         <table>
@@ -17,7 +17,10 @@ function TableBody(){
                 </tr>
             </thead>
             <tbody>
-                <TableRow />
+                {Array(count).fill(0).map((e, i) => {
+                    <TableRow />
+                })}
+                {count}
             </tbody>
         </table>
         <button  onClick={() => setCount(count + 1)} className="addRow">Add New Row</button>
