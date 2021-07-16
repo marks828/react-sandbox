@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 function TableBody(){
     
     const [count, setCount] = useState(0);
+    
     return (
         <>
         <table>
@@ -16,9 +17,9 @@ function TableBody(){
                 </tr>
             </thead>
             <tbody>
-                {Array(count).fill(0).map((e, i) => {
+                {Array(count).fill(0).map((e, i) => (
                     <TableRow />
-                })}
+                ))}
                 {count}
             </tbody>
         </table>
