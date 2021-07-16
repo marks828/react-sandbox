@@ -1,9 +1,17 @@
 import TableRow from "./TableRow";
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+
 
 function TableBody(){
     
-    const [count, setCount] = useState(1);
+    const [rows, setRows] = useState(1);
+    useEffect( () => {
+        console.log(rows) //logs every time a row changes
+    }, [rows] ) //[rows] looking for change from rows
+    
+    useEffect( () => {
+        //
+    }, [])//runs on mount
     
     return (
         <>
@@ -23,7 +31,7 @@ function TableBody(){
                 {count}
             </tbody>
         </table>
-        <button  onClick={() => setCount(count + 1)} className="addRow">Add New Row</button>
+        <button  onClick={() => setRows(rows + 1)} className="addRow">Add New Row</button>
         </>
     )
 };
