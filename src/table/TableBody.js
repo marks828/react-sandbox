@@ -1,12 +1,16 @@
 import TableRow from "./TableRow";
+import React, {useState} from 'react'
 
 function TableBody(){
     
+    const [count, setCount] = useState(0);
+
     return (
+        <>
         <table>
             <thead>
                 <tr>
-                    <th>Bet</th>
+                    <th>Test</th>
                     <th>Person 1</th>
                     <th>Person 2</th>
                     <th>Result</th>
@@ -16,6 +20,8 @@ function TableBody(){
                 <TableRow />
             </tbody>
         </table>
+        <button  onClick={() => setCount(count + 1)} className="addRow">Add New Row</button>
+        </>
     )
 };
 
