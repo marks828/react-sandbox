@@ -4,7 +4,6 @@ import React, {useState} from 'react'
 function TableBody(){
     
     const [count, setCount] = useState(0);
-    const rows = [];
     return (
         <>
         <table>
