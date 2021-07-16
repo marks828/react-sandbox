@@ -18,7 +18,7 @@ function TableBody(){
             </thead>
             <tbody>
                 {Array(count).fill(0).map((e, i) => (
-                    <TableRow />
+                    <TableRow heading={i}/>
                 ))}
                 {count}
             </tbody>
