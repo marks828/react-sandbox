@@ -25,10 +25,10 @@ function TableBody(){
                 </tr>
             </thead>
             <tbody>
-                {Array(count).fill(0).map((e, i) => (
+                {Array(rows).fill(0).map((e, i) => (
                     <TableRow heading={i}/>
                 ))}
-                {count}
+                {/* {rows} */}
             </tbody>
         </table>
         <button  onClick={() => setRows(rows + 1)} className="addRow">Add New Row</button>

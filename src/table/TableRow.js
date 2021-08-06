@@ -1,5 +1,7 @@
+
+
 function TableRow(props){
-    const names = ['Select', 'Mark', 'Nick']
+    const names = ['Select', 'Mark', 'Nick', 'Mike', 'Geo']
     return(
         <tr>
             <td>{props.heading}</td>
