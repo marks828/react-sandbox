@@ -1,11 +1,12 @@
 import { dummyData } from "../dummyData/dummyData";
 
-function TableRow(props){
+function TableInput(props){
     const names = ['Select', 'Mark', 'Nick', 'Mike', 'Geo']
     return(
         <tr>
             {/* first row */}
-            <td>{props.rowNumber}
+            <td>
+                <input type="text" id="bet_description" placeholder="bet description" />
             </td>
             {/* first bettor */}
             <td>
@@ -26,9 +27,9 @@ function TableRow(props){
                 </select>
             </td>
             {/* bet */}
-            <td>test</td>
+            <input type="text" id="bet_value" placeholder="bet value" />
         </tr>
     );
 };
 
-export default TableRow;
+export default TableInput;
