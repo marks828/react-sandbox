@@ -1,5 +1,3 @@
-import { dummyData } from "../dummyData/dummyData";
-
 function TableRow(props){
     const names = ['Select', 'Mark', 'Nick', 'Mike', 'Geo']
     return(

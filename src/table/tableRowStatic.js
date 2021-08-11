@@ -4,7 +4,9 @@ function TableRowStatic(props){
     const names = ['Select', 'Mark', 'Nick', 'Mike', 'Geo']
     return(
         <tr>
-            <td>{props.heading}</td>
+            <td>{dummyData.map((e, i) =>
+                <p></p>
+            )}</td>
             <td>
                 <p>{names[1]}</p>
             </td>
