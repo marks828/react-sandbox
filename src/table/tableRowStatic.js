@@ -5,7 +5,7 @@ function TableRowStatic(props){
     return(
         <tr>
             <td>{dummyData.map((e, i) =>
-                <p></p>
+                <p>{dummyData.e}</p>
             )}</td>
             <td>
                 <p>{names[1]}</p>
