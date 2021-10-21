@@ -12,7 +12,7 @@ function TableInput(props){
             <td>
                 <select name="" id="">
                     {names.map((e, i) => (
-                         <option value="">{e}</option>
+                        <option value="">{e}</option>
                         )    
                     )}
                 </select>
@@ -21,7 +21,7 @@ function TableInput(props){
             <td>
                 <select name="" id="">
                     {names.map((e, i) => (
-                         <option value="">{e}</option>
+                        <option value="">{e}</option>
                         )    
                     )}
                 </select>

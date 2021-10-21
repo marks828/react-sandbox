@@ -3,7 +3,7 @@ import './App.css';
 import Welcome from './Welcome';
 
 function App() {
- 
+
   const array = ['1', '2', '3']
   return (
     <div className="App">
